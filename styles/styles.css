@@ -1,0 +1,137 @@
+body{
+    font-family: 'Libre Bodoni', serif;font-family: 'Rubik', sans-serif;
+    background-color: #cf900a;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #C25400;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    background-color: #ffffff;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+li{
+    list-style: none;
+    margin-left: 10px;
+    padding: 10px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+ li a:hover {
+    color: white;
+    background-color: #cf900a;
+    padding: 10px;
+    margin: 0px;
+  }
+  
+  a:active {
+    color: #C25400;
+  }
+
+main h1{
+    padding: 10px;
+    margin: 30px 0px 30px 0px;
+    background-color: #C25400;
+    
+}
+
+.catalogo{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;   
+}
+
+.categoria{
+    max-width: 250px;
+    padding: 5px 40px 40px 40px;
+    background-color: #ffffff;
+    border-radius: 5%;
+    border: solid #C25400;
+}
+.categoria:hover{
+    transform: scale(1.05)
+}
+
+.categoria h3{
+    margin: 10px;
+    padding-bottom: 5px;
+    text-decoration:underline;
+}
+
+.categoria img{
+    max-width: 100%;
+    border-radius: 5%;
+}
+ 
+
+footer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #C25400;
+    font-family: 'Libre Bodoni', serif;font-family: 'Rubik', sans-serif;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    body {background: red;}
+    nav ul,.header{
+        justify-content: center;}
+    .catalogo{gap: 5px;}
+    footer{margin-top: 25px;}
+    main h1{
+        margin: 20px 0px 20px 0px;}
+}
+
+@media only screen and (min-width: 768px) {
+    body    {background: green;}
+    nav ul,.header{
+        justify-content: start;}
+    .catalogo{gap: 50px;}
+    footer{margin-top: 50px;}
+    main h1{
+        margin: 40px 0px 40px 0px;}
+}
+
+.contenedor-nosotros{
+    margin: auto;
+    width: 90%;
+    background-color: #cf900a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+.item-nosotros{
+    width: 60%;
+    background-color: antiquewhite;
+    margin: 3px;
+    border-radius: 20px;
+    border: #C25400 solid 3px;
+}
