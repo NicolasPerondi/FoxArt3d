@@ -15,6 +15,12 @@ header{
     align-items: center;
     justify-content: center;
 }
+.header h1{
+    font-size: 5.2vw;}
+
+.header ul{
+    justify-content: end;
+}
 nav{
     background-color: #ffffff;
 }
@@ -27,9 +33,15 @@ nav ul{
 }
 li{
     list-style: none;
+    margin: 5px 30px;
+}
+
+nav ul li{
     margin: 0px 40px;
     padding: 10px 0px;
 }
+
+
 a{
     color: black;
     text-decoration: none;
@@ -86,8 +98,7 @@ main h1{
 footer{
     margin-top: 30px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
     background-color: #C25400;
     font-family: 'Libre Bodoni', serif;font-family: 'Rubik', sans-serif;
 }
@@ -99,9 +110,10 @@ footer ul{
 }
 
 @media only screen and (max-width: 600px) {
-    li{ margin: 0px 10px;}
+    li{ margin: 3px 20px;}
     .header{
         justify-content: center;}
+    
     .catalogo{gap: 5px;}
     footer{margin-top: 25px;}
     main h1{
@@ -111,10 +123,9 @@ footer ul{
 @media only screen and (min-width: 768px) {
     nav ul{
         justify-content: start;}
-        li{ margin: 0px 10px;
-            padding-left: 10px;}
+        li{ margin: 6px 40px;}
     .header{
-        justify-content: start;}
+        justify-content: space-between;}
     .catalogo{gap: 50px;}
     footer{margin-top: 50px;}
     main h1{
@@ -146,6 +157,10 @@ form{
     margin: 3px;
     border-radius: 20px;
     border: #C25400 solid 3px;
+}
+.redes ul{
+    display: flex;
+    justify-content: center;
 }
 
 
