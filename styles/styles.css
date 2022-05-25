@@ -21,19 +21,25 @@ header{
 .header ul{
     justify-content: end;
 }
+
 nav{
     background-color: #ffffff;
 }
+
 nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px;
-    
+    padding: 0px; 
 }
+
 li{
     list-style: none;
     margin: 5px 30px;
+}
+li a {
+    padding: 10px;
+    margin: 0px;
 }
 
 nav ul li{
@@ -50,8 +56,6 @@ a{
  li a:hover {
     color: white;
     background-color: #cf900a;
-    padding: 10px;
-    margin: 0px;
   }
   
   a:active {
@@ -109,6 +113,70 @@ footer ul{
     align-items: center;
 }
 
+footer ul li a:hover{
+    border-radius: 10px;
+}
+
+.contenedor-nosotros{
+    margin: auto;
+    width: 90%;
+    background-color: #cf900a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 20px;
+}
+.item-nosotros{
+    width: 60%;
+    background-color: antiquewhite;
+    margin: 3px;
+    border-radius: 20px;
+    border: #C25400 solid 3px;
+    padding: 0px 20px;
+}
+
+form{
+    margin: auto;
+    width: 40%;
+    background-color:antiquewhite;
+    border-radius: 20px;
+    border: #C25400 solid 3px;
+    padding: 20px;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    border: #C25400 solid 1px;
+    border-radius: 10px;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+#boton{
+    background-color: #C25400;
+    padding: 20px;
+    max-width: 35%;
+    margin: 0px;
+    border: white solid 1px;
+}
+#boton:hover{
+    cursor: pointer;
+    background-color: #cf900a;
+    color: #ffffff;
+}
+
+.redes ul{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
 @media only screen and (max-width: 600px) {
     li{ margin: 3px 20px;}
     .header{
@@ -118,6 +186,11 @@ footer ul{
     footer{margin-top: 25px;}
     main h1{
         margin: 20px 0px 20px 0px;}
+    form{
+        width: 80%;
+    }
+    #boton{
+        width: 100%;}
 }
 
 @media only screen and (min-width: 768px) {
@@ -131,36 +204,3 @@ footer ul{
     main h1{
         margin: 40px 0px 40px 0px;}
 }
-
-.contenedor-nosotros{
-    margin: auto;
-    width: 90%;
-    background-color: #cf900a;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-radius: 20px;
-}
-
-form{
-    margin: auto;
-    width: 60%;
-    background-color:antiquewhite;
-    border-radius: 20px;
-    border: #C25400 solid 3px;
-    padding: 20px 0px;
-}
-
-.item-nosotros{
-    width: 60%;
-    background-color: antiquewhite;
-    margin: 3px;
-    border-radius: 20px;
-    border: #C25400 solid 3px;
-}
-.redes ul{
-    display: flex;
-    justify-content: center;
-}
-
-

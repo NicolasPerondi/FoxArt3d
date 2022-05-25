@@ -28,7 +28,7 @@
           width="30%"
         />
         <h1>Impresiones 3D</h1>
-        <ul>
+        <ul class="red-vert">
           <li>
             <a href=""><i class="fa-brands fa-instagram"></i></a>
           </li>
@@ -50,28 +50,14 @@
     </header>
     <main>
       <h1>Escribinos</h1>
-      <div class="contenedor-form">
         <form name="formu">
-          <label for="nombre">Nombre:</label>
-          <input
-            type="text"
-            name="nombre"
-            size="29"
-            maxlength="100"
-            placeholder="Ingrese su Nombre"
-          />
-          <br /><br/>
-          <textarea
-            name="comentario"
-            rows="10"
-            cols="40"
-            placeholder="Escriba su mensaje"
-          ></textarea>
-          <br /><br />
+          <input type="text" name="nombre" maxlength="100" placeholder="Ingrese su Nombre"/>
+          <input type="text" name="correo" maxlength="100" placeholder="Ingrese su E-mail"/>
+          <input type="number" name="numero" maxlength="20" placeholder="Ingrese su Teléfono"/>
+          <textarea name="mensaje" placeholder="Escriba su mensaje"></textarea>
           <input type="file" value="Archivo" /><br /><br />
-          <input type="button" value="Enviar" onclick="valida_envia()"/>
+          <input type="button" value="Enviar" onclick="valida_envia()" id="boton"/>
         </form>
-      </div>
     </main>
 
     <footer>

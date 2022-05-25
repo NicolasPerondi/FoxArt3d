@@ -1,25 +1,28 @@
 //Validación de un formulario con Javascript
-//Fuente: https://desarrolloweb.com/articulos/1767.php
 function valida_envia() {
-  //valido el nombre
+ 
   if (document.formu.nombre.value.length == 0) {
     alert("Tiene que escribir su nombre");
-    document.formu.nombre.focus(); //foco en el campo del error
+    document.formu.nombre.focus(); 
     return 0;
   }
-  if (document.formu.comentario.value.length == 0) {
-    alert("Tiene que escribir su comentario");
-    document.formu.comentario.focus(); //foco en el campo del error
+  if (document.formu.correo.value.length == 0) {
+    alert("Tiene que escribir su e-mail");
+    document.formu.correo.focus();
     return 0;
   }
-  //valido el interés
-//   if (document.fvalida.interes.selectedIndex == 0) {
-//     alert("Debe seleccionar un motivo de su contacto.");
-//     document.fvalida.interes.focus();
-//     return 0;
-//   }
+  telefono = document.formu.numero.value;
+  if (telefono == "") {
+    alert("Tiene que escribir su teléfono");
+    document.formu.numero.focus();
+    return 0;
+   } 
 
-  //el formulario se envia
+  if (document.formu.mensaje.value.length == 0) {
+    alert("Tiene que escribir su comentario");
+    document.formu.mensaje.focus();
+    return 0;
+  }
   alert("Muchas gracias por enviar el formulario");
   document.formu.submit();
 }
